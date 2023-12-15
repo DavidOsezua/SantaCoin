@@ -1,0 +1,31 @@
+.section {
+}
+
+.sectionContainer {
+  /* padding-top: 3rem; */
+  color: #fff;
+  text-align: center;
+}
+
+.sectionTitle {
+  color: #e3ddf8;
+  background: rgba(77, 65, 77, 0.199);
+  /* font-family: Nunito; */
+  font-size: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 0.3rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+@media screen and (min-width: 765px) {
+  .sectionContainer {
+    padding-top: 0;
+    color: #fff;
+  }
+
+  .sectionTitle {
+    font-size: 2.5rem;
+  }
+}

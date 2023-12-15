@@ -1,0 +1,139 @@
+.formContainer {
+  border-radius: 1.0625rem;
+  border: 1px solid #474343;
+  background: #171426;
+  padding: 1.5625rem 0.875rem;
+  margin-top: 2rem;
+  position: relative;
+}
+
+.formSnow {
+  position: absolute;
+  width: 20rem;
+  top: -8px;
+  left: -1%;
+  flex-shrink: 0;
+}
+.formSnow2 {
+  position: absolute;
+  bottom: -10px;
+  left: -1%;
+  flex-shrink: 0;
+}
+
+.formContainer > * + * {
+  margin-top: 1rem;
+}
+
+.formTitle {
+  color: #fdfdfe;
+  text-align: center;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+
+.input {
+  width: 5rem;
+  height: 2rem;
+  border-radius: 0.1875rem;
+  background: rgba(243, 242, 248, 0.08);
+  color: #fff;
+  outline: none;
+
+  padding: 0.5rem;
+}
+
+.buyContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #474343;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(239, 243, 249, 0.5);
+  width: 17.5rem;
+  height: 3.7;
+  padding: 0.5rem;
+}
+
+.buyText {
+  color: #7a7a7a;
+  text-align: center;
+  /* font-family: Nunito; */
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.btn {
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  border-radius: 0.75rem;
+  background: #cbc1ed;
+  width: 100%;
+  color: #1a1918;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.currentPriceContainer {
+  display: flex;
+  gap: 2rem;
+}
+
+.currentPrice {
+  color: #fff;
+  font-family: Nunito;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+@media screen and (min-width: 787px) {
+  .formContainer {
+    padding: 4.9375rem 2.5625rem;
+  }
+  .buyContainer {
+    width: 49.5rem;
+    /* height: 2.5rem; */
+  }
+  .formTitle {
+    font-size: 2.18425rem;
+  }
+  .formSnow {
+    width: 55.9rem;
+  }
+  .formSnow2 {
+    position: absolute;
+    bottom: -20px;
+    width: 55.8rem;
+    left: -1%;
+    flex-shrink: 0;
+  }
+
+  .btn {
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    border-radius: 0.75rem;
+    background: #cbc1ed;
+    width: 100%;
+    color: #1a1918;
+    text-align: center;
+    padding: 1.4375rem;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  }
+
+  .nextPriceContainer {
+    display: flex;
+    justify-content: center;
+    gap: 20rem;
+  }
+}

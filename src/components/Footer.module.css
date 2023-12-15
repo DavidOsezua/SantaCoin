@@ -1,0 +1,42 @@
+.footer {
+  background: #4e4081;
+  color: #fff;
+  position: relative;
+  padding: 4rem 0;
+}
+
+.footerContainer {
+  text-align: center;
+}
+
+.footerContainer > * + * {
+  margin-top: 1.5rem;
+}
+
+.socialContainer {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footerTitle {
+  color: #fff;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.footerText {
+  color: #fff;
+  text-align: center;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@media screen and (min-width: 765px) {
+  .footerText {
+    font-size: 1.2rem;
+  }
+}

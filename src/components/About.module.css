@@ -1,0 +1,112 @@
+.section {
+  background: #020204;
+  /* height: 100vh; */
+  padding-top: 10rem;
+  padding-bottom: 2rem;
+}
+
+.aboutContainer {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  color: aliceblue;
+  padding: 0 1rem;
+}
+
+.aboutContainer > * + * {
+  margin-top: 1.5rem;
+}
+
+.aboutTitle {
+  color: #aaee9b;
+  /* font-family: Nunito; */
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.2625rem;
+}
+
+.aboutTitle2 {
+  color: #fdfefd;
+  font-family: Montserrat;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 1rem;
+}
+
+.aboutText {
+  color: #a2a3a5;
+  font-size: 0.975rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 80%;
+}
+.tokenContainer {
+  border-radius: 0.75rem;
+  background: radial-gradient(
+    195.62% 195.61% at 50% 50%,
+    rgba(23, 20, 38, 0.67) 0%,
+    rgba(47, 45, 54, 0) 100%
+  );
+  padding: 4rem 1.5rem;
+}
+
+.nftContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nftContainer > * + * {
+  margin-top: 1rem;
+}
+
+.santaClause {
+  width: 20rem;
+  height: 20rem;
+    /* padding: 0 1.5rem; */
+}
+
+.nftText {
+  color: #fff;
+  text-align: center;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.45rem;
+}
+.image {
+  width: 15rem;
+}
+
+.line {
+  height: 2px;
+  width: 100px;
+  background-color: #fdfefd;
+}
+
+@media screen and (min-width: 765px) {
+  .aboutTitle {
+    font-size: 1.663rem;
+  }
+
+  .aboutTitle2 {
+    font-size: 3rem;
+  }
+
+  .aboutText {
+    font-size: 1.2rem;
+    width: 40%;
+  }
+
+  .santaClause {
+  width: 30rem;
+  height: 30rem;
+
+}
+}
