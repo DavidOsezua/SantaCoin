@@ -2,7 +2,7 @@ import {
   binance,
   coinGecko,
   coinMarketPrime,
-  pancakeSwap,
+  PancakeSwap,
   bitget,
   x,
   discord,
@@ -30,7 +30,7 @@ export const patnerImages = [
   { id: 2, image: coinGecko },
   { id: 3, image: coinMarketPrime },
   { id: 4, image: bitget },
-  { id: 5, image: pancakeSwap },
+  { id: 5, image: PancakeSwap },
 ];
 
 export const faqData = [
