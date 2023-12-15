@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./About.module.css";
 import SectionTitleAndText from "./SectionTitleAndText";
 import { aboutLogo, santaClause } from "../assets";
+import { Fade } from "react-awesome-reveal";
 
 const About = () => {
   return (
@@ -13,20 +14,25 @@ const About = () => {
           title2={`About SantaCoin `}
           text={`Establish a decentralized autonomous organization (SantaDAO) where community `}
         />
-
-        <div className={styles.tokenContainer}>
-          <div className={styles.image}>
-            <img src={aboutLogo} />
+        <Fade direction="right" delay={400}>
+          <div className={styles.tokenContainer}>
+            {" "}
+            <div className={styles.image}>
+              <img src={aboutLogo} />
+            </div>
+            <div></div>
           </div>
-
-          <div></div>
-        </div>
+        </Fade>
 
         <div className={styles.nftContainer}>
-          <h1 className={styles.nftText}>NFT</h1>
-          <div className={styles.santaClause}>
-            <img src={santaClause} />
-          </div>
+          <Fade direction="up" delay={300}>
+            <h1 className={styles.nftText}>NFT</h1>
+          </Fade>
+          <Fade delay={300}>
+            <div className={styles.santaClause}>
+              <img src={santaClause} />
+            </div>
+          </Fade>
         </div>
       </div>
     </section>

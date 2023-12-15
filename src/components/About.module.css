@@ -68,7 +68,6 @@
 .santaClause {
   width: 20rem;
   height: 20rem;
-    /* padding: 0 1.5rem; */
 }
 
 .nftText {
@@ -81,7 +80,8 @@
   letter-spacing: 0.45rem;
 }
 .image {
-  width: 15rem;
+  width: 20rem;
+  margin: 0 auto;
 }
 
 .line {

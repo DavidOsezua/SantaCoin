@@ -2,6 +2,7 @@ import React from "react";
 import SectionTitleAndText from "./SectionTitleAndText";
 import style from "./Roadmap.module.css";
 import { RoadmapDesktop, RodmapMobile } from "../assets";
+import { Fade } from "react-awesome-reveal";
 
 const Roadmap = () => {
   return (
@@ -14,14 +15,17 @@ const Roadmap = () => {
           text={`Establish a decentralized autonomous organization (SantaDAO) where community `}
         />
 
-        <div className={style.imageContainer}>
-          <div className={style.mobile}>
-            {" "}
-            <img src={RodmapMobile} />
-          </div>
+        <Fade delay={400}>
+          {" "}
+          <div className={style.imageContainer}>
+            <div className={style.mobile}>
+              {" "}
+              <img src={RodmapMobile} />
+            </div>
 
-          <img src={RoadmapDesktop} className={style.desktop} />
-        </div>
+            <img src={RoadmapDesktop} className={style.desktop} />
+          </div>
+        </Fade>
       </div>
     </section>
   );
