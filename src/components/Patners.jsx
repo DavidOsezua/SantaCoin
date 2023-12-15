@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./patners.module.css";
+import styles from "./Patners.module.css";
 import { patnerImages } from "../data/data";
 
 const Patners = () => {
