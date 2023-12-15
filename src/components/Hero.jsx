@@ -25,11 +25,9 @@ const Hero = () => {
         <img src={snowMobile} className={``} />
       </div>
       <div className={`${styles.heroContainer}`}>
-        <Fade direction="down">
-          <img src={heroLogo} className={`${styles.heroLogo}`} />
-        </Fade>
+        <img src={heroLogo} className={`${styles.heroLogo}`} />
 
-        <Fade direction="down">
+        <Fade delay={300}>
           <div>
             <h1 className={styles.heroTitle}>SantaCoin Central</h1>
             <p className={styles.heroText}>
