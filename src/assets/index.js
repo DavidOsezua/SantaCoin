@@ -9,7 +9,7 @@ import formSnow2 from "./formSnow2.svg";
 import formBigSnow from "./formBigSnow.svg";
 import coinMarketPrime from "./coinMarketPrime.svg";
 import coinGecko from "./coinGecko.svg";
-import pancakeSwap from "./pancakeSwap.svg";
+import PancakeSwap from "./PancakeSwap.svg";
 import binance from "./binance.svg";
 import bitget from "./bitget.svg";
 import aboutLogo from "./aboutLogo.svg";
@@ -35,7 +35,7 @@ export {
   bitget,
   coinGecko,
   coinMarketPrime,
-  pancakeSwap,
+  PancakeSwap,
   aboutLogo,
   santaClause,
   RoadmapDesktop,
