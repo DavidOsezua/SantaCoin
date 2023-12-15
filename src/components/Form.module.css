@@ -13,12 +13,14 @@
   top: -8px;
   left: -1%;
   flex-shrink: 0;
+  transition: 0.4s;
 }
 .formSnow2 {
   position: absolute;
   bottom: -10px;
   left: -1%;
   flex-shrink: 0;
+  transition: 0.4s;
 }
 
 .formContainer > * + * {
@@ -83,16 +85,52 @@
 }
 .currentPriceContainer {
   display: flex;
-  gap: 2rem;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nextPriceContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nextPriceContainer > * + * {
+  margin-top: 1rem;
 }
 
 .currentPrice {
   color: #fff;
-  font-family: Nunito;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   font-style: normal;
   font-weight: 500;
   line-height: 150%;
+  opacity: 0.7;
+}
+
+.usdt {
+  border-radius: 0.625rem;
+  padding: 0.3rem 0.5625rem;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.12) -120%,
+    rgba(255, 255, 255, 0.04) 239.33%
+  );
+}
+
+.nextPrice {
+  padding: 0.1875rem 0.75rem 0.25rem 0.75rem;
+  border-radius: 6.25rem;
+  background: #362a63;
+}
+
+.nextPriceUsdt {
+  color: #eeebfb;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 @media screen and (min-width: 787px) {
   .formContainer {
@@ -133,7 +171,12 @@
 
   .nextPriceContainer {
     display: flex;
-    justify-content: center;
-    gap: 20rem;
+    flex-direction: row;
+    align-items: center;
+    gap: 10rem;
+  }
+
+  .currentPrice {
+    font-size: 1.1rem;
   }
 }

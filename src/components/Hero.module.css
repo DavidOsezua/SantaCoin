@@ -145,6 +145,7 @@
 
   .formBigSnow {
     bottom: -35px;
+    transition: 0.3;
     /* background-color: #020204; */
   }
 }

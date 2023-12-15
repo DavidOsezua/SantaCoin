@@ -15,7 +15,11 @@ const Roadmap = () => {
         />
 
         <div className={style.imageContainer}>
-          <img src={RodmapMobile} className={style.mobile} />
+          <div className={style.mobile}>
+            {" "}
+            <img src={RodmapMobile} />
+          </div>
+
           <img src={RoadmapDesktop} className={style.desktop} />
         </div>
       </div>

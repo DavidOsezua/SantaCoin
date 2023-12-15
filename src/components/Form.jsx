@@ -25,7 +25,7 @@ const Form = () => {
         </div>
 
         <div className={styles.nextPrice}>
-          <p>
+          <p className={styles.nextPriceUsdt}>
             Next Price : <span>0.002</span> USDT
           </p>
         </div>
