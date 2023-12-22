@@ -1,4 +1,4 @@
-import React from "react";
+
 import { Navbar, Hero, About, Roadmap, FAQ, Footer,CopyRight } from "../components";
 import "./LandingPage.css";
 
