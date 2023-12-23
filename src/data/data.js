@@ -42,9 +42,9 @@ export const faqData = [
   {
     id: 2,
     header: `When will it launch?`,
-    text: `1. Set up TrustWallet or MetaMask Open Firefox or Google Chrome, then go to metamask.io. Create a wallet and download the MetaMask Chrome extension. on a mobile device? Install the MetaMask app on your Android or iPhone.
-           2. Buy BNB, USDT, or BUSD from an exchange Buy USDT, BUSD, or BNB on an exchange. Move BNB, USDT, or BUSD to your TrustWallet or MetaMask.
-           3. Buy PUDEL after selecting the wallet connection button.
+    text: `1)Set up TrustWallet or MetaMask Open Firefox or Google Chrome, then go to metamask.io. Create a wallet and download the MetaMask Chrome extension. on a mobile device? Install the MetaMask app on your Android or iPhone.
+           2)Buy BNB, USDT, or BUSD from an exchange Buy USDT, BUSD, or BNB on an exchange. Move BNB, USDT, or BUSD to your TrustWallet or MetaMask.
+           3)Buy PUDEL after selecting the wallet connection button.
 `,
   },
   {
