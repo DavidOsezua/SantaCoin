@@ -1,9 +1,8 @@
-import React from "react";
 import styles from "./Hero.module.css";
 import Patners from "./Patners";
 import Form from "./Form";
 import { snow, snowMobile, heroLogo, formBigSnow } from "../assets";
-import { Fade, Slide } from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 
 const Hero = () => {
   return (
