@@ -50,16 +50,16 @@ export const faqData = [
   {
     id: 3,
     header: `When will the stages end?`,
-    text: `Luminous fireflies dance in the moonlit garden, casting a magical glow on the petals of vibrant flowers under the starry sky.`,
+    text: `once we have determined the subsequent stage's cost. For instance, Stage 2 begins at a price increase of $0.00089.`,
   },
   {
     id: 4,
-    header: `SantaCoin token is not visible?`,
-    text: `Luminous fireflies dance in the moonlit garden, casting a magical glow on the petals of vibrant flowers under the starry sky.`,
+    header: `What is the launch of marketcap?`,
+    text: `The marketcap cannot be calculated at this time as tokens are still being sold.`,
   },
   {
     id: 5,
-    header: `How can I contact SantaCoin for support?`,
+    header: `Santacoin Central address?`,
     text: `Luminous fireflies dance in the moonlit garden, casting a magical glow on the petals of vibrant flowers under the starry sky.`,
   },
 ];
