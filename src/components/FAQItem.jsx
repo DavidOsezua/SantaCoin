@@ -19,9 +19,7 @@ const FAQItem = ({ num, curr, onOpen, faq, plus }) => {
       </div>
 
       <div className={`${styles.text} ${isOpen && styles.showText}`}>
-        {faq.text.split(". ").map((text) => (
-          <p>{text}</p>
-        ))}
+        {faq.text.split(".").map((text) => ({ text }))}
       </div>
     </div>
   );
