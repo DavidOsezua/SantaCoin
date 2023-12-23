@@ -62,7 +62,7 @@ export const faqData = [
 ];
 
 export const socialMediaImages = [
-  { id: 1, image: telegram },
+  { id: 1, image: telegram, link: "https://t.me/+XWEi7ZysuRMzMzc8" },
   { id: 2, image: discord },
-  { id: 3, image: x },
+  { id: 3, image: x, link: "https://twitter.com/santacentra" },
 ];
