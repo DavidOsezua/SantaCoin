@@ -3,6 +3,17 @@ import { formSnow, formSnow2 } from "../assets";
 import styles from "./Form.module.css";
 import { useWeb3Modal } from "@web3modal/wagmi/react";
 import { useAccount } from "wagmi";
+import { getPublicClient } from "@wagmi/core";
+
+import { toast } from "react-toastify";
+
+import {
+  buyPresale,
+  buyPresaleBNB,
+  getContractAllowance,
+  increaseContractAllowance,
+} from "../func/presale";
+import { parseEther } from "viem";
 
 const priceUsd = 25000;
 
@@ -11,7 +22,9 @@ const Form = () => {
   const [buyAmount, setBuyAmount] = useState("");
   const [output, setOutput] = useState("");
   const { open } = useWeb3Modal();
-  const { isConnected } = useAccount();
+  const { isConnected, address } = useAccount();
+  const [loading, setLoading] = useState(false);
+  const publicClient = getPublicClient();
 
   useEffect(() => {
     if (!buyAmount) return;
@@ -23,7 +36,40 @@ const Form = () => {
   }, [token, buyAmount]);
 
   const handleBuy = async () => {
-    console.log("Buying ");
+    if (!buyAmount) return;
+    setLoading(true);
+    try {
+      if (token == "BNB") {
+        const hash = await buyPresaleBNB(parseEther(buyAmount));
+        await toast.promise(publicClient.waitForTransactionReceipt(hash), {
+          error: "Error Buying presale",
+          success: "Presale Bought Successfully",
+          pending: "Buying presale",
+        });
+      } else {
+        const amountWei = parseEther(buyAmount);
+        const allowance = await getContractAllowance(address, token);
+
+        if (allowance < amountWei) {
+          const hash = await increaseContractAllowance(address, token);
+          await toast.promise(publicClient.waitForTransactionReceipt(hash), {
+            error: "Error Approving Token",
+            success: "Approve Successful",
+            pending: "Approving Token",
+          });
+        }
+        const hash = await buyPresale(token, amountWei);
+        await toast.promise(publicClient.waitForTransactionReceipt(hash), {
+          error: "Error Buying presale",
+          success: "Presale Bought Successfully",
+          pending: "Buying presale",
+        });
+      }
+    } catch (e) {
+      console.log(e);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -101,7 +147,9 @@ const Form = () => {
         </select>
       </div>
       {isConnected ? (
-        <button className={styles.btn}>Buy SantaCoin</button>
+        <button className={styles.btn} onClick={handleBuy} disabled={loading}>
+          Buy SantaCoin
+        </button>
       ) : (
         <button className={styles.btn} onClick={open}>
           Connect Wallet
