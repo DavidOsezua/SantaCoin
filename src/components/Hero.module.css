@@ -74,10 +74,10 @@
 
 .formBigSnow {
   position: absolute;
-  bottom: 0;
+  bottom: 10px;
   left: 0;
   flex-shrink: 0;
-  /* z-index: 100; */
+
 }
 
 .patners {

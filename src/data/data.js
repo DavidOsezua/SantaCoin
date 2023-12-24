@@ -59,7 +59,7 @@ export const faqData = [
   },
   {
     id: 5,
-    header: `Santacoin Contact address?`,
+    header: `Santacoin Contract address?`,
     text: `0xD010705f0974E52EBfac6BB28f1D1CfdC7909534`,
   },
 ];

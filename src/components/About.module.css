@@ -90,7 +90,13 @@
   background-color: #fdfefd;
 }
 
+.contractAdd {
+  width: 20%;
+}
 @media screen and (min-width: 765px) {
+  .contractAdd {
+    width: 100%;
+  }
   .aboutTitle {
     font-size: 1.663rem;
   }
@@ -105,8 +111,7 @@
   }
 
   .santaClause {
-  width: 30rem;
-  height: 30rem;
-
-}
+    width: 30rem;
+    height: 30rem;
+  }
 }

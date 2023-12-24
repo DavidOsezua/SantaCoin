@@ -1,7 +1,18 @@
 import React from "react";
 import { Fade } from "react-awesome-reveal";
+import CopyToClipboard from "react-copy-to-clipboard";
 
-const SectionTitleAndText = ({ styles, title1, title2, text,text2,text3 }) => {
+const contractAdd = `0xD010705f0974E52EBfac6BB28f1D1CfdC7909534`;
+
+const SectionTitleAndText = ({
+  styles,
+  title1,
+  title2,
+  text,
+  text2,
+  text3,
+  copy,
+}) => {
   return (
     <>
       <Fade direction="left" delay={300}>
@@ -17,7 +28,9 @@ const SectionTitleAndText = ({ styles, title1, title2, text,text2,text3 }) => {
 
       <div>
         <p>{text2}</p>
-        <p>{text3}</p>
+        <p className={styles.contractAdd}>
+          {text3} {copy}
+        </p>
       </div>
 
       <Fade direction="up" delay={600}>

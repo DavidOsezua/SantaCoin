@@ -5,7 +5,9 @@
   padding: 1.5625rem 0.875rem;
   margin-top: 2rem;
   position: relative;
+  height: 100%;
   width: 100%;
+  
 }
 
 .formSnow {
@@ -18,7 +20,7 @@
 }
 .formSnow2 {
   position: absolute;
-  bottom: -10px;
+  bottom: -17px;
   left: -1%;
   flex-shrink: 0;
   transition: 0.4s;
