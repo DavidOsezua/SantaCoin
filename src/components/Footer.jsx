@@ -1,7 +1,6 @@
-import React from "react";
 import styles from "./Footer.module.css";
 import { socialMediaImages } from "../data/data";
-import { faqSnow } from "../assets";
+
 const Footer = () => {
   return (
     <footer className={styles.footer}>
@@ -14,8 +13,13 @@ const Footer = () => {
         </p>
 
         <div className={styles.socialContainer}>
-          {socialMediaImages.map((socialMediaImage) => (
-            <a href={socialMediaImage.link} target="_blank">
+          {socialMediaImages.map((socialMediaImage, index) => (
+            <a
+              href={socialMediaImage.link}
+              target="_blank"
+              rel="noreferrer"
+              key={index}
+            >
               <img src={socialMediaImage.image} />
             </a>
           ))}

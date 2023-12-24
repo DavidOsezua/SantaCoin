@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./FAQItem.module.css";
 
 const FAQItem = ({ num, curr, onOpen, faq, plus }) => {
@@ -19,7 +18,7 @@ const FAQItem = ({ num, curr, onOpen, faq, plus }) => {
       </div>
 
       <div className={`${styles.text} ${isOpen && styles.showText}`}>
-        {faq.text.split(".").map((text) => ({ text }))}
+        {faq.text.split(".").map((text) => text)}
       </div>
     </div>
   );
