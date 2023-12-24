@@ -100,30 +100,34 @@ const Form = () => {
       </div>
 
       <div className={`${styles.buyContainer}`}>
-        <div className={`flex flex-col gap-[8px]`}>
-          <label className={styles.buyText}>You Send</label>
-          <input
-            type="number"
-            className={`${styles.input}`}
-            value={buyAmount}
-            onChange={(e) => setBuyAmount(e.target.value)}
-          />
+        <div className={` `}>
+          <p className={styles.buyText}>You Send</p>
+          <div className="w-[70%]">
+            <input
+              type="number"
+              className={`${styles.input}`}
+              value={buyAmount}
+              onChange={(e) => setBuyAmount(e.target.value)}
+            />
+          </div>
         </div>
 
-        <select
-          className="text-[#181527] bg-[#E3DDF8] rounded-[0.1875rem] p-[0.3rem] font-bold outline-none"
-          onChange={(e) => setToken(e.target.value)}
-        >
-          <option value="BNB" className="text-[#181527]" selected>
-            BNB
-          </option>
-          <option value="USDT" className="text-[#181527]">
-            USDT
-          </option>
-          <option value="BUSD" className="text-[#181527]">
-            BUSD
-          </option>
-        </select>
+        <div className="mt-[1rem]">
+          <select
+            className="text-[#181527] bg-[#E3DDF8] rounded-[0.1875rem] p-[0.3rem] font-bold outline-none"
+            onChange={(e) => setToken(e.target.value)}
+          >
+            <option value="BNB" className="text-[#181527]" selected>
+              BNB
+            </option>
+            <option value="USDT" className="text-[#181527]">
+              USDT
+            </option>
+            <option value="BUSD" className="text-[#181527]">
+              BUSD
+            </option>
+          </select>
+        </div>
       </div>
 
       <h2 className="font-bold">
@@ -131,20 +135,25 @@ const Form = () => {
       </h2>
 
       <div className={`${styles.buyContainer}`}>
-        <div className={`flex flex-col gap-[8px] `}>
-          <label className={styles.buyText}>You Receive</label>
-          <input
-            type="number"
-            className={`${styles.input}`}
-            disabled
-            value={output}
-          />
+        <div className={`  `}>
+          <p className={styles.buyText}>You Receive</p>
+          <div className="w-[70%]">
+            <input
+              type="number"
+              className={`${styles.input}`}
+              disabled
+              value={output}
+            />
+          </div>
         </div>
-        <select className="text-[#181527] bg-[#E3DDF8] rounded-[0.1875rem] p-[0.3rem] font-bold outline-none">
-          <option value="" className="text-[#181527]">
-            Santa Coin
-          </option>
-        </select>
+
+        <div className="mt-[1rem]">
+          <select className="text-[#181527] bg-[#E3DDF8] rounded-[0.1875rem] p-[0.3rem] font-bold outline-none">
+            <option value="" className="text-[#181527]">
+              Santa Coin
+            </option>
+          </select>
+        </div>
       </div>
       {isConnected ? (
         <button className={styles.btn} onClick={handleBuy} disabled={loading}>

@@ -38,7 +38,9 @@ const Hero = () => {
         </Fade>
 
         <Fade delay={300}>
-          <Form />
+          <div className="p-[1rem]">
+            <Form />
+          </div>
         </Fade>
       </div>
     </section>

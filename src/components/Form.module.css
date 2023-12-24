@@ -5,11 +5,12 @@
   padding: 1.5625rem 0.875rem;
   margin-top: 2rem;
   position: relative;
+  width: 100%;
 }
 
 .formSnow {
   position: absolute;
-  width: 20rem;
+  /* width: 20rem; */
   top: -8px;
   left: -1%;
   flex-shrink: 0;
@@ -36,8 +37,18 @@
   line-height: normal;
 }
 
+.buyContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #474343;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(239, 243, 249, 0.5);
+  padding: 0.5rem;
+}
+
 .input {
-  width: full;
+  width: 100%;
   background: none;
   fill: none;
   height: 2rem;
@@ -49,22 +60,9 @@
   padding: 0.5rem;
 }
 
-.buyContainer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border: 1px solid #474343;
-  border-radius: 0.75rem;
-  border: 1px solid rgba(239, 243, 249, 0.5);
-  width: 17.5rem;
-  height: 3.7;
-  padding: 0.5rem;
-}
-
 .buyText {
   color: #7a7a7a;
-  text-align: center;
-  /* font-family: Nunito; */
+  text-align: left;
   font-size: 0.75rem;
   font-style: normal;
   font-weight: 400;

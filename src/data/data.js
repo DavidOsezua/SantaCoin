@@ -59,8 +59,8 @@ export const faqData = [
   },
   {
     id: 5,
-    header: `Santacoin Central address?`,
-    text: `Luminous fireflies dance in the moonlit garden, casting a magical glow on the petals of vibrant flowers under the starry sky.`,
+    header: `Santacoin Contact address?`,
+    text: `0xD010705f0974E52EBfac6BB28f1D1CfdC7909534`,
   },
 ];
 

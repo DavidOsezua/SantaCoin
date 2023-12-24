@@ -11,16 +11,26 @@ const About = () => {
         <SectionTitleAndText
           styles={styles}
           title1={`ABOUT `}
+          text2={`Contract Address:`}
+          text3={`0xD010705f0974E52EBfac6BB28f1D1CfdC7909534`}
           title2={`About SantaCoin `}
           text={`Establish a decentralized autonomous organization (SantaDAO) where community `}
         />
+
         <Fade direction="right" delay={400}>
           <div className={styles.tokenContainer}>
-            {" "}
             <div className={styles.image}>
               <img src={aboutLogo} />
             </div>
-            <div></div>
+
+            <div className="flex justify-center mt-[1rem]">
+              <a
+                href="https://santacoin.gitbook.io/santacoin-whitepaper/"
+                className=" border-[1px] px-[1.5rem] py-[0.3rem]"
+              >
+                Whitepaper
+              </a>
+            </div>
           </div>
         </Fade>
 

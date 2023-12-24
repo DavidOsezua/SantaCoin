@@ -14,11 +14,11 @@ const FAQItem = ({ num, curr, onOpen, faq, plus }) => {
         }`}
       >
         <h4 className={`${styles.faqTitle}`}>{faq.header}</h4>
-        <img src={plus} className={styles.plus} onClick={openHandler} />
+        <img src={plus} className={`cursor-pointer`} onClick={openHandler} />
       </div>
 
       <div className={`${styles.text} ${isOpen && styles.showText}`}>
-        {faq.text.split(".").map((text) => text)}
+        {faq.text.split(". ").map((text) => text)}
       </div>
     </div>
   );

@@ -1,7 +1,7 @@
 import React from "react";
 import { Fade } from "react-awesome-reveal";
 
-const SectionTitleAndText = ({ styles, title1, title2, text }) => {
+const SectionTitleAndText = ({ styles, title1, title2, text,text2,text3 }) => {
   return (
     <>
       <Fade direction="left" delay={300}>
@@ -14,6 +14,11 @@ const SectionTitleAndText = ({ styles, title1, title2, text }) => {
           <p className={styles.aboutText}>{text}</p>
         </div>
       </Fade>
+
+      <div>
+        <p>{text2}</p>
+        <p>{text3}</p>
+      </div>
 
       <Fade direction="up" delay={600}>
         <div className={styles.lineContainer}>
