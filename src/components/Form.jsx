@@ -77,9 +77,7 @@ const Form = () => {
       <div className={styles.formSnow}>
         <img src={formSnow} />
       </div>
-      <div className={styles.formSnow2}>
-        <img src={formSnow2} />
-      </div>
+     
 
       <h2 className={styles.formTitle}>Buy SantaCoin</h2>
 

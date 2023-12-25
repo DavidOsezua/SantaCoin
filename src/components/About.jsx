@@ -30,7 +30,7 @@ const About = () => {
             </CopyToClipboard>
           }
           title2={`About SantaCoin `}
-          text={`Establish a decentralized autonomous organization (SantaDAO) where community `}
+          text={`SantaCoin Central is a holiday-themed decentralized currency designed to spread joy and laughter during the Christmas season, embracing the spirit of Cantaclos. `}
         />
 
         <Fade direction="right" delay={400}>
